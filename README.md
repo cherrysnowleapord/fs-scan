@@ -5,6 +5,8 @@
 A flexible, configurable filesystem scanning library written in C that provides recursive directory traversal with advanced filtering capabilities. Designed for security tools, file analysis, and system monitoring applications.
 This was made start to finish in 2 hours so there might still be some bugs, however from my testing the main functionality is working. Any untested conditions can cause a crash though.
 
+See dir_scan.old.c to see my old code from 2-3 years ago.
+
 ## ✨ Features
 
 - **Recursive Directory Scanning**: Deep filesystem traversal with nesting limits

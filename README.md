@@ -3,6 +3,7 @@
 ## 📝 Overview
 
 A flexible, configurable filesystem scanning library written in C that provides recursive directory traversal with advanced filtering capabilities. Designed for security tools, file analysis, and system monitoring applications.
+This was made start to finish in 2 hours so there might still be some bugs, however from my testing the main functionality is working. Any untested conditions can cause a crash though.
 
 ## ✨ Features
 
@@ -101,12 +102,6 @@ printf("Scanned %d files\n", ret);
 3. **Resource Manager**: Memory and file descriptor limit enforcement
 4. **Callback Processor**: Custom file processing via function pointers
 
-### Safety Features
-- **Null Pointer Checks**: Robust error handling throughout
-- **Memory Cleanup**: Automatic freeing of allocated resources
-- **Boundary Validation**: All array accesses are bounds-checked
-- **Resource Limits**: Prevents runaway memory/descriptor usage
-
 ## 💡 Use Cases
 
 - **Security Scanning**: Malware detection, configuration audits
@@ -114,16 +109,6 @@ printf("Scanned %d files\n", ret);
 - **Backup Tools**: Selective file copying with filtering
 - **System Monitoring**: Track file changes and access patterns
 - **Development Tools**: Code search, project analysis
-
-## 📚 Development Notes
-
-This implementation demonstrates several important software engineering practices:
-
-- **Modular Design**: Clean separation of configuration, context, and processing
-- **Resource Management**: Proper allocation and deallocation patterns
-- **Error Handling**: Comprehensive boundary and null checks
-- **Flexibility**: Highly configurable through struct-based parameters
-- **Maintainability**: Clear function names and consistent coding style
 
 ## ⚠️ Important Notes
 
